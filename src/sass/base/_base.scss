@@ -16,4 +16,46 @@ html {
 
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: $color-grey-dark;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 180rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr [main-start] minmax(min-content, 120rem) [main-end] 1fr;
+  grid-template-rows: auto 1fr auto;
+
+}
+
+.header, .footer {
+  grid-column: span 3;
+}
+
+.main {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 14rem;
+}
+
+.section {
+  grid-column: 1/-1;
+}
+
+// TEMPORARY COLOR GROUPS
+
+header {
+  background-color: rgba(228, 239, 113, 0.4);
+}
+
+main {
+  background-color: rgba(33, 214, 226, 0.4);
+}
+
+footer {
+  background-color: rgba(226, 33, 187, 0.4);
 }

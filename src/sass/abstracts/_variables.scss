@@ -3,15 +3,21 @@
 // -----------------------------------------------------------------------------
 
 // FONT VARIABLES
-$font-primary: sans-serif;
-$font-display: sans-serif;
+$font-primary: 'Inter', sans-serif;
+$font-display: 'Inter', sans-serif;
 
 // COLOR VARIABLES
-$color-primary: #f03e3e;
-$color-primary-dark: #e03131;
-
-$color-secondary: #1864ab;
+$color-primary-cold: #4BC0C8;
+$color-secondary-mid: #C779D0;
+$color-secondary-warm: #FEAC5E;
 
 $color-grey-light: #f1f3f5;
 $color-grey-mid: #adb5bd;
-$color-grey-dark: #343a40;
+$color-grey-dark: #212529;
+
+$color-text: #fff;
+
+// GRADIENTS
+$background-gradient-fallback: #FEAC5E;  /* fallback for old browsers */
+$background-gradient: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
