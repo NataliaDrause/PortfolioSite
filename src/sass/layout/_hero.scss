@@ -1,0 +1,81 @@
+.section-hero {
+  margin: 2.4rem;
+  margin-bottom: 16rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+  justify-content: space-between;
+  align-items: center;
+
+
+  &__description {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  &__intro {
+    font-size: 6.2rem;
+    font-weight: 600;
+  }
+
+  &__icons, &__btns {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__btn:link,
+  &__btn:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-grey-dark;
+    display: block;
+    background-color: $color-text;
+    padding: 2.4rem 3rem;
+    border-radius: 150px;
+    line-height: 0;
+    transition: all .2s;
+  }
+
+  &__btn:hover,
+  &__btn:active {
+    background: $background-gradient;
+  }
+
+  // &__icon:link,
+  // &__icon:visited {
+  //   background-color: $color-text;
+  //   padding: 1rem;
+  //   border-radius: 50%;
+  //   line-height: 0;
+  //   transition: all .2s;
+  // }
+
+  // &__icon:hover,
+  // &__icon:active {
+  //   background: $background-gradient;
+  // }
+
+  // &__icon {
+
+  //   svg {
+  //     fill: $color-grey-dark;
+  //     width: 4rem;
+  //     height: 4rem;
+
+  //   }
+  //}
+
+  &__img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.heading-1 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1.5;
+}

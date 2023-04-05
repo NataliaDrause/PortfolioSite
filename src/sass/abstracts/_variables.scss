@@ -19,5 +19,6 @@ $color-text: #fff;
 
 // GRADIENTS
 $background-gradient-fallback: #FEAC5E;  /* fallback for old browsers */
-$background-gradient: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+$background-gradient: linear-gradient(60deg, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+$background-gradient-radial: radial-gradient(#4BC0C8, #C779D0, #FEAC5E); 
 
