@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all the typography styles.
+// -----------------------------------------------------------------------------
+
+body {
+  font-family: $font-display;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
