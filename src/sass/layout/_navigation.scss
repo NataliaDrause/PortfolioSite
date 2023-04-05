@@ -1,3 +1,88 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the navigation.
 // -----------------------------------------------------------------------------
+
+.header {
+  height: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo:link, 
+  &__logo:visited {
+    display: inline-block;
+    text-decoration: none;
+    background: -webkit-linear-gradient(right, #4BC0C8, #C779D0, #FEAC5E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    //color: $color-text;
+    font-weight: 600;
+    font-size: 2.4rem;
+    transition: all .2s;
+  }
+
+  &__logo:hover, 
+  &__logo:active {
+    color: $color-primary-cold;
+  }
+
+}
+
+.main-nav {
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  
+  &__link:link, 
+  &__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-text;
+    font-weight: 400;
+    font-size: 1.8rem;
+    transition: all .2s;
+  }
+
+  &__link:hover, 
+  &__link:active {
+    color: $color-primary-cold;
+    // background: -webkit-linear-gradient(right, #4BC0C8, #C779D0, #FEAC5E);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    transform: translateY(-1px);
+  }
+
+  &__cta:link, 
+  &__cta:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-text;
+    font-weight: 400;
+    font-size: 1.8rem;
+    transition: all .2s;
+    padding: 1.2rem 2.4rem;
+    border-radius: 100px;
+    color: $color-text;
+    background: linear-gradient($color-grey-dark, $color-grey-dark) padding-box,
+    linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E) border-box;
+    border-radius: 100px;
+    border: 2px solid transparent;
+  }
+  
+  &__cta:hover, 
+  &__cta:active {
+    transform: translateY(-1px);
+    color: $color-text;
+  }
+}
+
+
+// MOBILE NAVIGATION
+
+.mobile-nav__btn {
+  display: none;
+}

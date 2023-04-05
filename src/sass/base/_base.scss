@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   max-width: 180rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 0 4.8rem;
   display: grid;
   grid-template-columns: 1fr [main-start] minmax(min-content, 120rem) [main-end] 1fr;
   grid-template-rows: auto 1fr auto;
@@ -48,9 +48,9 @@ body {
 
 // TEMPORARY COLOR GROUPS
 
-header {
-  background-color: rgba(228, 239, 113, 0.4);
-}
+// header {
+//   background-color: rgba(228, 239, 113, 0.4);
+// }
 
 main {
   background-color: rgba(33, 214, 226, 0.4);
