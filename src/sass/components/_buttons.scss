@@ -1,3 +1,23 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+// CATEGORY LINKS
+
+.category-link:link,
+  .category-link:visited {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: $color-text;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 1px solid $color-text;
+    border-radius: 100px;
+    transition: all .2s;
+  }
+
+  .category-link:hover,
+  .category-link:active {
+    transform: scale(1.02);
+  }

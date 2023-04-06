@@ -10,10 +10,25 @@ body {
   color: $color-text;
 }
 
+p {
+  line-height: 2;
+}
+
 .heading--h1 {
   font-size: 3.4rem;
   font-weight: 600;
   line-height: 1.7;
+}
+
+.heading--h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.heading--h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .underline {

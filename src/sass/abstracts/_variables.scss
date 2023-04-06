@@ -8,7 +8,9 @@ $font-display: 'Inter', sans-serif;
 
 // COLOR VARIABLES
 $color-primary-cold: #4BC0C8;
+$color-primary-cold-to-mid: #7699cc; //additional
 $color-secondary-mid: #C779D0;
+$color-secondary-mid-to-warm: #e0919e; //additional
 $color-secondary-warm: #FEAC5E;
 
 $color-grey-light: #f1f3f5;
@@ -22,3 +24,9 @@ $background-gradient-fallback: #FEAC5E;  /* fallback for old browsers */
 $background-gradient: linear-gradient(60deg, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 $background-gradient-radial: radial-gradient(#4BC0C8, #C779D0, #FEAC5E); 
 
+// MARGINS
+$mb-huge: 16rem;
+$mb-large: 8rem;
+$mb-medium: 3.2rem;
+$mb-small: 1.6rem;
+$mb-xs: 1.2rem;

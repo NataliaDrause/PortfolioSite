@@ -1,0 +1,47 @@
+.glowing-bullet {
+  width: 1.2rem;
+	height:1.2rem;
+  display: inline-block;
+	border-radius:50%;
+  margin-right: 1.6rem;
+	transform-style:preserve-3d;
+	transform-origin:center;
+}
+
+.glowing-bullet-item:hover .glowing-bullet {
+  animation:glow 1.6s ease-in-out;
+}
+
+.glowing-bullet-list .glowing-bullet-item:first-of-type .glowing-bullet {
+  background-color: $color-primary-cold;
+  box-shadow:0px 0px 10px $color-primary-cold;
+}
+.glowing-bullet-list .glowing-bullet-item:nth-of-type(2) .glowing-bullet {
+  background-color: $color-primary-cold-to-mid;
+  box-shadow:0px 0px 10px $color-primary-cold-to-mid;
+}
+.glowing-bullet-list .glowing-bullet-item:nth-of-type(3) .glowing-bullet {
+  background-color:$color-secondary-mid;
+  box-shadow:0px 0px 10px $color-secondary-mid;
+}
+.glowing-bullet-list .glowing-bullet-item:nth-of-type(4) .glowing-bullet {
+  background-color:$color-secondary-mid-to-warm;
+  box-shadow:0px 0px 10px $color-secondary-mid-to-warm;
+}
+.glowing-bullet-list .glowing-bullet-item:nth-of-type(5) .glowing-bullet {
+  background-color: $color-primary-cold;
+  box-shadow:0px 0px 10px $color-primary-cold;
+}
+.glowing-bullet-list .glowing-bullet-item:last-of-type .glowing-bullet {
+  background-color:$color-secondary-warm;
+  box-shadow:0px 0px 10px $color-secondary-warm;
+}
+
+@keyframes glow {
+	0%, 40%, 100%{
+		transform:scale(1);	
+	}
+	20%{
+		transform:scale(2);	
+	}
+}

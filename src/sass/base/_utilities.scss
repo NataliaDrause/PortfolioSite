@@ -1,3 +1,18 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes (margins, etc.).
 // -----------------------------------------------------------------------------
+.mb-large {
+  margin-bottom: $mb-large;
+}
+
+.mb-medium {
+  margin-bottom: $mb-medium;
+}
+
+.mb-small {
+  margin-bottom: $mb-small;
+}
+
+.mb-xs {
+  margin-bottom: $mb-xs;
+}
