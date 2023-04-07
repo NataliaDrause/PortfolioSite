@@ -1,0 +1,11 @@
+.section-projects {
+  &__cards{
+    margin-bottom: 4.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.4rem;
+  }
+
+  
+}
+

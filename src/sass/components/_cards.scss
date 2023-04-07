@@ -1,0 +1,63 @@
+.project__card {
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20rem 1fr;
+  gap: 2.4rem;
+  background-color: $color-grey-dark;
+}
+
+.project__card .project__desc-box a::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.project__img-box {
+  height: 20rem;
+  overflow: hidden;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.project__img {
+  height: 20rem;
+  min-width: 100%;
+}
+
+.project__desc-box {
+  padding: 2.4rem;
+  padding-bottom: 4.8rem;
+}
+
+.project__text {
+  line-height: 2;
+  margin-bottom: $mb-medium;
+}
+
+.project__link:link,
+.project__link:visited {
+  text-decoration: none;
+  padding-bottom: 2px;
+  color: $color-text;
+  transition: all .2s;
+  border-bottom: 2px solid $color-text;
+
+  span {
+    padding-left: 1.2rem;
+    transition: all .2s;
+  }
+}
+
+.project__link:hover,
+.project__link:active {
+  color: $color-primary-cold;
+  border-bottom: 2px solid $color-primary-cold;
+
+  span {
+    padding-left: 1.4rem;
+  }
+}

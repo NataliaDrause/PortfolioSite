@@ -37,25 +37,11 @@ body {
 
 .main {
   grid-column: 2/3;
-  // display: grid;
-  // grid-template-columns: repeat(12, 1fr);
-  // row-gap: 14rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16rem;
 }
 
 .section {
   grid-column: 1/-1;
 }
-
-// TEMPORARY COLOR GROUPS
-
-// header {
-//   background-color: rgba(228, 239, 113, 0.4);
-// }
-
-// main {
-//   background-color: rgba(33, 214, 226, 0.4);
-// }
-
-// footer {
-//   background-color: rgba(226, 33, 187, 0.4);
-// }

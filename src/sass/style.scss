@@ -26,6 +26,7 @@
   'layout/features',
   'layout/intro',
   'layout/skills',
+  'layout/projects',
   'layout/forms',
   'layout/sidebar',
   'layout/footer';
@@ -33,7 +34,8 @@
 // 5. Components
 @import
   'components/buttons',
-  'components/glowing-bullets';
+  'components/cards',
+  'components/glowing-elements';
 
 // 6. Page-specific styles
 @import

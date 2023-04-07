@@ -26,8 +26,14 @@ p {
 }
 
 .heading--h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
+  font-weight: 600;
+}
+
+.heading--h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -40,4 +46,24 @@ p {
   &:hover {
     background-size: 100% 88%;
   }
+}
+
+.view-all__box {
+  text-align: center;
+}
+
+.view-all__link:link,
+.view-all__link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  color: $color-text;
+  border-bottom: 2px solid $color-text;
+  transition: all .2s;
+}
+
+.view-all__link:hover,
+.view-all__link:active {
+  color: $color-primary-cold;
+  border-bottom: 2px solid $color-primary-cold;
 }
