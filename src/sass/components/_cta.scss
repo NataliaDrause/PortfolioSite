@@ -1,0 +1,58 @@
+.cta {
+  background: linear-gradient(rgba(33, 37, 41, 0.3), rgba(33, 37, 41, 0.3)), $background-gradient;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	margin: 0 10rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6.4rem;
+
+  &__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin-bottom: $mb-medium;
+    font-size: 1.8rem;
+  }
+
+  &__btn:link,
+  &__btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-text;
+    background-color: $color-grey-dark;
+    font-weight: 400;
+    font-size: 2rem;
+    transition: all .2s;
+    padding: 1.5rem 3.4rem;
+    border: 1px solid $color-text;
+    border-radius: 100px;
+    transition: all .2s;
+  }
+
+  &__btn:hover,
+  &__btn:active {
+    transform: translateY(-2px);
+  }
+
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
