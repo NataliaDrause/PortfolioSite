@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     padding: 1rem 2rem;
-    border: 1px solid $color-text;
+    border: 2px solid $color-text;
     border-radius: 100px;
     transition: all .5s;
   }
@@ -46,3 +46,24 @@
   .category-link:active {
     transform: scale(1.02);
   }
+
+  // VIEW ALL LINK
+.view-all__box {
+  text-align: center;
+}
+
+.view-all__link:link,
+.view-all__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  color: $color-text;
+  border-bottom: 2px solid $color-text;
+  transition: all .2s;
+}
+
+.view-all__link:hover,
+.view-all__link:active {
+  transform: translateY(-2px);
+}
