@@ -1,6 +1,31 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+// BUTTONS
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $color-text;
+  display: block;
+  //background-color: $color-text;
+  border: 2px solid $color-text;
+  padding: 2.4rem 3rem;
+  border-radius: 150px;
+  line-height: 0;
+  transition: all .2s;
+}
+
+.btn--primary:link,
+.btn--primary:visited {
+  //background-color: $color-text;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: $color-text;
+  color: $color-grey-dark;
+}
+
 
 // CATEGORY LINKS
 

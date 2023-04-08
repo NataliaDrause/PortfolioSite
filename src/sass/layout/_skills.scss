@@ -1,5 +1,4 @@
 .section-skills {
-  //margin-bottom: $mb-huge;
 
   &__list {
     list-style: none;
@@ -20,5 +19,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    cursor: default;
+    transition: all .3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }

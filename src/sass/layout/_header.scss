@@ -1,3 +1,19 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header.
-// -----------------------------------------------------------------------------
+.header {
+  height: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo:link, 
+  &__logo:visited {
+    display: inline-block;
+    text-decoration: none;
+    background-color: $background-gradient-fallback;
+    background: $background-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+
+}
