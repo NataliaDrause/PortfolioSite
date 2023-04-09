@@ -1,9 +1,21 @@
 .section-projects {
+  
   &__cards{
     margin-bottom: 4.8rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6.4rem;
+    gap: 4.8rem;
+    justify-items: center;
+
+    @include respond(large) { 
+      gap: 1.6rem;
+    }
+
+    @include respond(medium) { 
+      grid-template-columns: 1fr;
+      gap: 4.8rem;
+
+    }
   }
 }
 

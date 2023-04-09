@@ -1,10 +1,19 @@
 .project__card {
+  max-width: 50rem;
   border-radius: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 20rem 1fr;
   gap: 2.4rem;
   background-color: $color-grey-dark;
+
+  @include respond(large) { 
+    gap: 1.2rem;
+  }
+
+  @include respond(medium) { 
+    grid-template-rows: 25rem 1fr;
+  }
 }
 
 .project__card .project__desc-box a::before {
@@ -17,7 +26,6 @@
 }
 
 .project__img-box {
-  height: 20rem;
   overflow: hidden;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -26,6 +34,10 @@
 .project__img {
   height: 20rem;
   min-width: 100%;
+
+  @include respond(medium) { 
+    height: 25rem;
+  }
 }
 
 .project__desc-box {
@@ -76,6 +88,11 @@
 .project__text {
   line-height: 2;
   margin-bottom: $mb-medium;
+
+  @include respond(large) { 
+    line-height: 1.6;
+    margin-bottom: 2.4rem;
+  }
 }
 
 .project__link:link,

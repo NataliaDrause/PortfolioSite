@@ -12,6 +12,18 @@
 
 html {
   font-size: 62.5%; // 10px
+
+  @include respond(large) { 
+    font-size: 56.25%; // 9px
+  }
+
+  @include respond(medium) {
+      font-size: 50%; // 8px
+  }
+
+  @include respond(huge) {
+      font-size: 75%; // 12px
+  }
 }
 
 body {
@@ -29,17 +41,36 @@ body {
   grid-template-columns: 1fr [main-start] minmax(min-content, 120rem) [main-end] 1fr;
   grid-template-rows: auto 1fr auto;
   row-gap: 9.6rem;
+
+  @include respond(medium) { 
+    grid-template-columns: [main-start] 1fr [main-end];
+    margin: 0;
+    padding: 0 3.2rem;
+  }
+
+  @include respond(small) { 
+    row-gap: 6.4rem;
+  }
+
 }
 
 .header, .footer {
-  grid-column: span 3;
+  grid-column: 1/-1;
 }
 
 .main {
-  grid-column: 2/3;
+  grid-column: main-start / main-end;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 16rem;
+
+  @include respond(large) { 
+    row-gap: 12rem;
+  }
+
+  @include respond(small) { 
+    row-gap: 9.6rem;
+  }
 }
 
 .section {

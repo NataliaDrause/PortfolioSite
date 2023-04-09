@@ -18,6 +18,10 @@ p {
   font-size: 3.4rem;
   font-weight: 600;
   line-height: 1.5;
+
+  @include respond(large) { 
+    font-size: 3rem;
+  }
 }
 
 .heading--h2 {

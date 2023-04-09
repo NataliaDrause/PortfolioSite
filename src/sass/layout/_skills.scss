@@ -1,11 +1,20 @@
 .section-skills {
 
   &__list {
+    margin-top: $mb-large;
     list-style: none;
     display: flex;
     gap: 2.4rem;
     justify-content: center;
     flex-wrap: wrap;
+
+    @include respond(large) { 
+      gap: 1rem;
+    }
+
+    @include respond(small) { 
+      margin-top: 6.4rem;
+    }
   }
 
   &__item {
@@ -21,6 +30,22 @@
     text-align: center;
     cursor: default;
     transition: all .3s;
+
+    @include respond(large) { 
+      font-size: 1.7rem;
+      width: 12rem;
+      height: 12rem;
+    }
+
+    @include respond(small) { 
+      font-size: 1.7rem;
+      width: auto;
+      height: auto;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+
 
     &:hover {
       transform: scale(1.2);

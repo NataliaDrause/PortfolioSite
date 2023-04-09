@@ -11,10 +11,20 @@
   text-align: center;
   padding: 6.4rem;
 
+  @include respond(medium) { 
+    margin: 0 4.8rem;
+    padding: 4.8rem;
+  }
+
+  @include respond(small) { 
+    margin: 0 1.6rem;
+    padding: 3.2rem;
+  }
+
   &__heading {
     font-size: 4rem;
     font-weight: 700;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 2rem;
   }
 

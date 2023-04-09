@@ -104,11 +104,12 @@
 .border-glow::after {
   position: absolute;
   content: "";
-  top: 40%;
+  top: 25%;
   left: 2rem;
   z-index: -1;
-  height: 70%;
-  width: 70%;
+  height: 80%;
+  width: 100%;
+  border-radius: 50%;
   filter: blur(100px);
   background-image: $background-gradient;
   opacity: 1;

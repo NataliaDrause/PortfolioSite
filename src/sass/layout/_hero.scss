@@ -6,29 +6,78 @@
   justify-content: space-between;
   align-items: center;
 
+  @include respond(large) { 
+    margin: 2.4rem 0;
+    gap: 3.2rem;
+  }
+
+  @include respond(medium) { 
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 8rem;
+  }
+
+  @include respond(medium) { 
+    margin: 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 6.4rem;
+  }
+
 
   &__description {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+
+    @include respond(medium) { 
+      grid-column: span 1;
+    }
   }
 
   &__intro {
     font-size: 6.2rem;
     line-height: 1;
     font-weight: 600;
+
+    @include respond(large) { 
+      font-size: 5.2rem;
+    }
+
+    @include respond(small) { 
+      line-height: 1.2;
+      font-size: 4rem;
+    }
   }
 
   &__btns {
     margin-top: 2.4rem;
     display: flex;
     gap: 2.4rem;
+
+    @include respond(small) { 
+      gap: 1.2rem;
+    }
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__img {
     width: 100%;
     border-radius: 50%;
+
+    @include respond(medium) { 
+      width: 45%;
+    }
+
+    @include respond(small) { 
+      width: 55%;
+    }
   }
 
 }

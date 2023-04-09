@@ -5,6 +5,13 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid $color-grey-mid;
+
+  @include respond(small) { 
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    //justify-content: center;
+    padding: 2.4rem 0;
+  }
 }
 
 .footer-nav{
@@ -13,6 +20,10 @@
   display: flex;
   align-items: center;
   gap: 3.2rem;
+
+  @include respond(small) { 
+    gap: 2.4rem;
+  }
 
   &__link:link, 
   &__link:visited {
