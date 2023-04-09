@@ -40,16 +40,11 @@ body {
   display: grid;
   grid-template-columns: 1fr [main-start] minmax(min-content, 120rem) [main-end] 1fr;
   grid-template-rows: auto 1fr auto;
-  row-gap: 9.6rem;
 
   @include respond(medium) { 
     grid-template-columns: [main-start] 1fr [main-end];
     margin: 0;
     padding: 0 3.2rem;
-  }
-
-  @include respond(small) { 
-    row-gap: 6.4rem;
   }
 
 }
@@ -59,10 +54,15 @@ body {
 }
 
 .main {
+  margin-top: 9.6rem;
   grid-column: main-start / main-end;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 16rem;
+
+  @include respond(small) { 
+    margin-top: 16rem;
+  }
 
   @include respond(large) { 
     row-gap: 12rem;
