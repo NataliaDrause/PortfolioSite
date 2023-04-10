@@ -111,6 +111,7 @@
   width: 100%;
   border-radius: 50%;
   filter: blur(100px);
+  background-color: $background-gradient-fallback;
   background-image: $background-gradient;
   opacity: 1;
   transition: opacity .5s;
