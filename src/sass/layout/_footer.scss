@@ -7,9 +7,8 @@
   border-top: 1px solid $color-grey-mid;
 
   @include respond(small) { 
-    gap: 2.4rem;
+    gap: 1.6rem;
     flex-wrap: wrap;
-    padding: 2.4rem 0;
     margin-top: 9.6rem;
   }
 }
@@ -22,7 +21,7 @@
   gap: 3.2rem;
 
   @include respond(small) { 
-    gap: 2.4rem;
+    gap: 1.6rem;
   }
 
   &__link:link, 

@@ -4,6 +4,7 @@
 
 // MEDIA QUERY MANAGER
 /*
+0 - 400px:      X-Small (Phone)
 0 - 600px:      Small (Phone)
 600 - 800px:    Medium (Tablet portrait)
 800 - 1200px:   Large (Tablet landscape)
@@ -18,6 +19,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
+  @if $breakpoint == x-small {
+      @media only screen and (max-width: 25em) { @content };    //600px
+  }
   @if $breakpoint == small {
       @media only screen and (max-width: 37.5em) { @content };    //600px
   }

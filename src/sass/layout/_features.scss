@@ -13,6 +13,11 @@
     row-gap: 6.4rem;
   }
 
+  @include respond(x-small) { 
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+
   &__feature {
     text-align: center;
   }
